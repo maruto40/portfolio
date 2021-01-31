@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+}
+.h-logo {
+  font-size: 10vw;
+  width: 80vw;
+  white-space: nowrap;
+  letter-spacing: 0.5rem;
+  margin-top: 11%;
+}
+nav {
+  width: 20%;
+  height: auto;
+  margin-left: 30%;
+}
+.box-parent {
+  position: relative;
+  width: 50%;
+  /* margin: 5% 5% 5% 0; */
+  display: inline-block;
+  float: right;
+  z-index: -1;
+}
+
+.box-parent:before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.box-child {
+  height: calc(100% / 3);
+  display: flex;
+}
+.b-c-short {
+  flex: 1;
+  background: #a49592;
+}
+.b-c-long {
+  flex: 2;
+  background: #eed8c9;
+
+}
+.left {
+  background: #e99787;
+}
+.right {
+  background: #727077;
+}
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+  padding: 0.4rem;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+.main {
+  flex: 1;
+}
